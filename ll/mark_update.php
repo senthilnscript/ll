@@ -8,7 +8,7 @@ if(isset($_POST['id'],$_POST['mark'])&&$_POST['id']!=''&&$_POST['mark']!='')
 {
 $id=$_POST['id'];
 $encoded = urlencode('mark='.$_POST['mark'].'&student_id='.$_POST['student_id'].'&subject_id='.$_POST['subject_id']);
- $url ='http://localhost:8012/laravel/ll/public/mark/'.$id;
+ $url ='http://20.0.0.153:8012/laravel/ll/public/mark/'.$id;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL,$url);
 	curl_setopt($ch, CURLOPT_POSTFIELDS,  $encoded);

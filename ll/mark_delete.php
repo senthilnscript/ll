@@ -6,7 +6,7 @@ Add a record for Class Table
 **/
 
 $id=7;
- $url ='http://localhost:8012/laravel/ll/public/mark/'.$id;
+ $url ='http://20.0.0.153:8012/laravel/ll/public/mark/'.$id;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL,$url);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");

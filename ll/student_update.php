@@ -8,7 +8,7 @@ if(isset($_POST['id'],$_POST['name'])&&$_POST['id']!=''&&$_POST['name']!='')
 {
 $id=$_POST['id'];
 $encoded = urlencode('name='.$_POST['name'].'&description='.$_POST['description'].'&class_id='.$_POST['class_id']);
- $url ='http://localhost:8012/laravel/ll/public/student/'.$id;
+ $url ='http://20.0.0.153:8012/laravel/ll/public/student/'.$id;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL,$url);
 	curl_setopt($ch, CURLOPT_POSTFIELDS,  $encoded);
