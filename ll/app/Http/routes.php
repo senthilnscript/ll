@@ -68,3 +68,20 @@ DELETE		/student/{id}				destroy		student.destroy
 Route::resource('student', 'StudentController');
 
 /** end of subject routes ***/
+
+/*** for mark function **/
+/******************************
+
+
+Verb		Path					Action		Route Name
+GET			/mark					index		mark.index
+POST		/mark					store		mark.store
+GET			/mark/{id}				show		mark.show
+PUT/PATCH	/mark/{id}				update		mark.update
+DELETE		/mark/{id}				destroy		mark.destroy 
+
+******************************/
+
+Route::resource('mark', 'MarkController');
+
+/** end of subject routes ***/

@@ -1,0 +1,23 @@
+http://localhost:8012/laravel/ll/public/class  -> Class view
+http://localhost:8012/laravel/ll/class_add.php -> Class add
+http://localhost:8012/laravel/ll/public/class/2 -> Class view single record
+http://localhost:8012/laravel/ll/class_delete.php -> Class delete
+http://localhost:8012/laravel/ll/class_update.php -> Class update
+
+http://localhost:8012/laravel/ll/public/subject -> subject view
+http://localhost:8012/laravel/ll/subject_add.php -> subject add
+http://localhost:8012/laravel/ll/public/subject/2 -> subject view single record
+http://localhost:8012/laravel/ll/subject_delete.php -> subject delete
+http://localhost:8012/laravel/ll/subject_update.php -> subject update
+
+http://localhost:8012/laravel/ll/public/class  -> Student view
+http://localhost:8012/laravel/ll/class_add.php -> Student add
+http://localhost:8012/laravel/ll/public/class/2 -> Student view single record
+http://localhost:8012/laravel/ll/class_delete.php -> Student delete
+http://localhost:8012/laravel/ll/class_update.php -> Student update
+
+http://localhost:8012/laravel/ll/public/mark  -> Mark view
+http://localhost:8012/laravel/ll/mark_add.php -> Mark add
+http://localhost:8012/laravel/ll/public/mark/2 -> Mark view single record
+http://localhost:8012/laravel/ll/mark_delete.php -> Mark delete
+http://localhost:8012/laravel/ll/mark_update.php -> Mark update
