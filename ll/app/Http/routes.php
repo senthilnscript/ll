@@ -16,18 +16,14 @@ Route::get('/', function () {
 });
 
 
-Route::resource('mark', 'MarkController');
-
 /*** for class function **/
 /******************************
 
 
 Verb		Path					Action		Route Name
 GET			/class					index		class.index
-GET			/class/create			create		class.create
 POST		/class					store		class.store
 GET			/class/{id}				show		class.show
-GET			/class/{id}/edit		edit		class.edit
 PUT/PATCH	/class/{id}				update		class.update
 DELETE		/class/{id}				destroy		class.destroy 
 
@@ -36,3 +32,39 @@ DELETE		/class/{id}				destroy		class.destroy
 Route::resource('class', 'ClassController');
 
 /** end of class routes ***/
+
+
+/*** for subject function **/
+/******************************
+
+
+Verb		Path						Action		Route Name
+GET			/subject					index		subject.index
+POST		/subject					store		subject.store
+GET			/subject/{id}				show		subject.show
+PUT/PATCH	/subject/{id}				update		subject.update
+DELETE		/subject/{id}				destroy		subject.destroy 
+
+******************************/
+
+Route::resource('subject', 'SubjectController');
+
+/** end of subject routes ***/
+
+
+/*** for student function **/
+/******************************
+
+
+Verb		Path						Action		Route Name
+GET			/student					index		student.index
+POST		/student					store		student.store
+GET			/student/{id}				show		student.show
+PUT/PATCH	/student/{id}				update		student.update
+DELETE		/student/{id}				destroy		student.destroy 
+
+******************************/
+
+Route::resource('student', 'StudentController');
+
+/** end of subject routes ***/
