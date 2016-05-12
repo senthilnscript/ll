@@ -1,9 +1,5 @@
 <?php
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-
 class ExampleTest extends TestCase
 {
     /**
@@ -11,9 +7,15 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicExample()
-    {
-        $this->visit('/')
-             ->see('Laravel 5');
-    }
+	 
+	 /** php unit test for DB test ***/
+	public function testDatabase()
+	{
+		// Make call to application...
+	
+		$this->seeInDatabase('subject', ['name' => 'Maths']);
+		$this->seeInDatabase('class', ['name' => 'I']);
+		$this->seeInDatabase('student', ['name' => 'student 1']);
+		$this->seeInDatabase('mark', ['student_id' => '2','subject_id' => '2']);
+	}
 }
